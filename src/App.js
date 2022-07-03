@@ -34,5 +34,6 @@ class App extends Component {
     )
   }
 }
+// Devano Zaidan
 
 export default App
