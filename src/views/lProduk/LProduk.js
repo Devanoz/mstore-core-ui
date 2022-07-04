@@ -63,6 +63,7 @@ const LProduk = () => {
             <h3>List produk</h3>
           </CRow>
           <ProductList />
+          <CButton>de</CButton>
         </CCol>
       </CRow>
     </>

@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
 
-
 import {
   CAvatar,
   CButton,
@@ -22,7 +21,7 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
-import {cilPeople} from '@coreui/icons'
+import { cilPeople } from '@coreui/icons'
 
 let data = [
   {
@@ -32,24 +31,47 @@ let data = [
 ]
 
 export default function ProductList() {
-  return <>
-    <CTable align="middle" className="mb-0 border" hover responsive>
-                <CTableHead color="light">
-                  <CTableRow>
-                    <CTableHeaderCell className="text-center">
-                      <CIcon icon={cilPeople} />
-                    </CTableHeaderCell>
-                    <CTableHeaderCell>Id</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">tittle</CTableHeaderCell>
-                    <CTableHeaderCell >Price</CTableHeaderCell>
-                    <CTableHeaderCell className = "text-center">stock</CTableHeaderCell>
-                    <CTableHeaderCell className = "text-center" >image</CTableHeaderCell>
-                    <CTableHeaderCell>weight</CTableHeaderCell>
-                  </CTableRow>
-                </CTableHead>
-                <CTableBody>
-                  
-                </CTableBody>
-              </CTable>
-  </>
+  return (
+    <>
+      <CCard>
+        <CCardBody className="p-1">
+          <CTable align="middle" className="mb-0 border" hover responsive>
+            <CTableHead color="light">
+              <CTableRow>
+                {/* <CTableHeaderCell className="text-center">
+                  <CIcon icon={cilPeople} />
+                </CTableHeaderCell> */}
+                <CTableHeaderCell>Id</CTableHeaderCell>
+                <CTableHeaderCell className="text-center">tittle</CTableHeaderCell>
+                <CTableHeaderCell className="text-center">Price</CTableHeaderCell>
+                <CTableHeaderCell className="text-center">stock</CTableHeaderCell>
+                <CTableHeaderCell className="text-center">image</CTableHeaderCell>
+                <CTableHeaderCell className="text-center">weight</CTableHeaderCell>
+                <CTableHeaderCell className="text-center">Category</CTableHeaderCell>
+              </CTableRow>
+            </CTableHead>
+            <CTableBody>
+              <CTableRow>
+                <CTableDataCell>1</CTableDataCell>
+                <CTableDataCell className="text-center">kaos malioboro</CTableDataCell>
+                <CTableDataCell className="text-center">150000</CTableDataCell>
+                <CTableDataCell className="text-center">350</CTableDataCell>
+                <CTableDataCell className="text-center">image</CTableDataCell>
+                <CTableDataCell className="text-center">1kg</CTableDataCell>
+                <CTableDataCell className="text-center">Kaos</CTableDataCell>
+                <CTableDataCell className="text-center">
+                  <CButton className="btn btn-success">edit</CButton>
+                </CTableDataCell>
+                <CTableDataCell className="text-center">
+                  <CButton className="btn btn-danger">Delete</CButton>
+                </CTableDataCell>
+
+              </CTableRow>
+            </CTableBody>
+          </CTable>
+         
+        </CCardBody>
+      </CCard>
+    </>
+  )
 }
