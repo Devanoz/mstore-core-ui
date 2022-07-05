@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { CCard, CCardBody, CCardHeader } from '@coreui/react'
 import React from 'react'
 
