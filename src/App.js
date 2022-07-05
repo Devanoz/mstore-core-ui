@@ -1,6 +1,7 @@
 import React, { Component, Suspense } from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import './scss/style.scss'
+import Helloworld from './views/pages/hello-world/hello world'
 
 const loading = (
   <div className="pt-3 text-center">
@@ -28,12 +29,14 @@ class App extends Component {
             <Route exact path="/404" name="Page 404" element={<Page404 />} />
             <Route exact path="/500" name="Page 500" element={<Page500 />} />
             <Route path="*" name="Home" element={<DefaultLayout />} />
+            {/* <Route path="/hello-world" name="test" element={<Helloworld />} /> */}
           </Routes>
         </Suspense>
       </HashRouter>
     )
   }
 }
+
 // Devano Zaidan
 
 export default App

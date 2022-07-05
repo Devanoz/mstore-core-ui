@@ -61,6 +61,7 @@ const _nav = [
     to: '/mStok',
     icon: <CIcon icon={cilCalculator} customClassName="nav-icon" />,
   },
+
   // {
   //   component: CNavTitle,
   //   name: 'Theme',
@@ -330,5 +331,4 @@ const _nav = [
   //   ],
   // },
 ]
-
 export default _nav
