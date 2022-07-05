@@ -1,7 +1,7 @@
 import React from 'react'
 //import child components from Lproduk
-import ProductList from './productList'
-import Keterangan from './Keterangan'
+import ProductList from '../child/productList'
+import Keterangan from '../child/Keterangan'
 
 import {
   CAvatar,
