@@ -17,7 +17,6 @@ const AppFooter = () => {
         </a>
       </div>
     </CFooter>
-    //cek commit
   )
 }
 
