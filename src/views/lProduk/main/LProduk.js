@@ -1,5 +1,8 @@
 import React from 'react'
+//import child components from Lproduk
 import ProductList from './productList'
+import Keterangan from './Keterangan'
+
 import {
   CAvatar,
   CButton,
@@ -61,8 +64,11 @@ const LProduk = () => {
         <CCol>
           <CRow>
             <h3>List produk</h3>
+            <ProductList className="mb-2" />
           </CRow>
-          <ProductList />
+          <CRow className="my-2">
+            <Keterangan />
+          </CRow>
           <CButton>de</CButton>
         </CCol>
       </CRow>
