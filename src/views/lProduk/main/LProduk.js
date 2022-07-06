@@ -12,6 +12,7 @@ import {
   CCardFooter,
   CCardHeader,
   CCol,
+  CContainer,
   CProgress,
   CRow,
   CTable,
@@ -46,6 +47,7 @@ import {
   cilUser,
   cilUserFemale,
 } from '@coreui/icons'
+import { Routes } from 'react-router'
 
 // import avatar1 from 'src/assets/images/avatars/1.jpg'
 // import avatar2 from 'src/assets/images/avatars/2.jpg'
@@ -60,6 +62,7 @@ import {
 const LProduk = () => {
   return (
     <>
+    
       <CRow>
         <CCol>
           <CRow>

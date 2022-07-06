@@ -10,8 +10,11 @@ import SKeuangan from 'src/views/sKeuangan/SKeuangan'
 import LProduk from 'src/views/lProduk/main/LProduk'
 import LKategori from 'src/views/lKategori/LKategori'
 import MStok from 'src/views/mStok/MStok'
+
+import EditProduk from "../views/lProduk/form/EditProduk"
 // routes config
 import routes from '../routes'
+
 
 const AppContent = () => {
   return (
@@ -26,6 +29,8 @@ const AppContent = () => {
           <Route path="/lProduk" element={<LProduk />} />
           <Route path="/lKategori" element={<LKategori />} />
           <Route path="/mStok" element={<MStok />} />
+          {/* <Route path="/edit-produk" element={<EditProduk />} /> */}
+
         </Routes>
       </Suspense>
     </CContainer>
