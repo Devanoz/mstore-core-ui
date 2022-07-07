@@ -13,7 +13,7 @@ const produk = [
     },
     {
       id:2,
-      tittle: 'kaos malioboro',
+      tittle: 'batik sleman',
       price: 150000,
       stock: 350,
       image: 'none',
@@ -25,7 +25,7 @@ const produk = [
     },
     {
       id:3,
-      tittle: 'kaos malioboro',
+      tittle: 'gantungan kunci',
       price: 150000,
       stock: 350,
       image: 'none',
@@ -37,7 +37,7 @@ const produk = [
     },
     {
       id:4,
-      tittle: 'kaos malioboro',
+      tittle: 'blankon',
       price: 150000,
       stock: 350,
       image: 'none',

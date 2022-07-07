@@ -23,9 +23,12 @@ import {
   } from '@coreui/react'
 import { CChart } from '@coreui/react-chartjs'
 
+
+
 export default function StatistikPenjualan() {
 
     // dataProduk = dataProduk.map((val)=>val.tittle);
+    const dataProdukOnlyTittle = dataProduk.map((data)=> data.tittle);
 
   return (
     <CCard className="m-4">
@@ -34,9 +37,9 @@ export default function StatistikPenjualan() {
         </CCardHeader>
         <CCardBody>
           <CChart
-            type="line"
+            type="bar"
             data={{
-              labels: ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu'],
+              labels:dataProdukOnlyTittle,
               datasets: [
                 {
                   label: 'Statistik Penjualan',
