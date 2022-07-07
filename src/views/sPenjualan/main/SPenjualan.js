@@ -51,18 +51,32 @@ import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
 
-import WidgetsBrand from '../widgets/WidgetsBrand'
-import WidgetsDropdown from '../widgets/WidgetsDropdown'
+//import from child
+import StatistikPenjualan from '../child/StatistikPenjualan'
+// import WidgetsBrand from '../widgets/WidgetsBrand'
+import WidgetsDropdown from '../../widgets/WidgetsDropdown'
 
 const SPenjualan = () => {
   return (
     <>
       <CRow>
-        <CCol md={12}>
-          <h3>Bissmillahirahmanirahim</h3>
+        <CCol>
+          <CCard>
+            <CCardBody>col1</CCardBody>
+          </CCard>
+        </CCol>
+
+        <CCol>
+          <CCard>
+            <CCardBody>col2</CCardBody>
+          </CCard>
         </CCol>
       </CRow>
-      <WidgetsDropdown />
+      <CRow>
+        <CCol>
+          
+        </CCol>
+      </CRow>
     </>
   )
 }

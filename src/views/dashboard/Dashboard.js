@@ -181,20 +181,20 @@ const Dashboard = () => {
   return (
     <>
       <WidgetsDropdown />
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           <h5 className="text-center card-title">Statistik Penjualan</h5>
         </CCardHeader>
         <CCardBody>
           <CChart
-            type="bar"
+            type="line"
             data={{
               labels: ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu'],
               datasets: [
                 {
                   label: 'Statistik Penjualan',
                   backgroundColor: 'blue',
-                  data: [219, 230,210,211,197,200,255],
+                  data: [219, 230, 210, 211, 197, 200, 255],
                 },
               ],
             }}

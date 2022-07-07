@@ -5,7 +5,7 @@ import { CContainer, CSpinner } from '@coreui/react'
 //import sidebar component to appcontent
 import HelloWorld from '../views/pages/hello-world/hello world'
 import Dashboard from 'src/views/dashboard/Dashboard'
-import SPenjualan from 'src/views/sPenjualan/SPenjualan'
+import SPenjualan from 'src/views/sPenjualan/main/SPenjualan'
 import SKeuangan from 'src/views/sKeuangan/SKeuangan'
 import LProduk from 'src/views/lProduk/main/LProduk'
 import LKategori from 'src/views/lKategori/LKategori'
