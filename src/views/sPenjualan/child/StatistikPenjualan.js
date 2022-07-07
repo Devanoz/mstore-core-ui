@@ -44,7 +44,7 @@ export default function StatistikPenjualan() {
                 {
                   label: 'Statistik Penjualan',
                   backgroundColor: 'blue',
-                  data: [219, 230, 210, 211, 197, 200, 255],
+                  data: [550,560,570,580],
                 },
               ],
             }}
