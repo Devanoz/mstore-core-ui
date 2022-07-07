@@ -1,4 +1,6 @@
 import React from 'react'
+//import data from
+import dataProduk from '../data/dataProduk'
 
 import {
   CAvatar,
@@ -55,26 +57,30 @@ import avatar6 from 'src/assets/images/avatars/6.jpg'
 import StatistikPenjualan from '../child/StatistikPenjualan'
 // import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../../widgets/WidgetsDropdown'
+import { data } from 'core-js/internals/is-forced'
 
 const SPenjualan = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol md={9}>
           <CCard>
             <CCardBody>col1</CCardBody>
           </CCard>
+         
         </CCol>
 
-        <CCol>
+        <CCol md={3}>
           <CCard>
             <CCardBody>col2</CCardBody>
           </CCard>
+         
         </CCol>
       </CRow>
+
       <CRow>
         <CCol>
-          
+          <StatistikPenjualan />
         </CCol>
       </CRow>
     </>

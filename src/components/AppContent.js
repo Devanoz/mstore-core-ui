@@ -30,7 +30,6 @@ const AppContent = () => {
           <Route path="/lKategori" element={<LKategori />} />
           <Route path="/mStok" element={<MStok />} />
           {/* <Route path="/edit-produk" element={<EditProduk />} /> */}
-
         </Routes>
       </Suspense>
     </CContainer>

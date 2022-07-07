@@ -1,4 +1,7 @@
 import React from 'react'
+//import data
+import dataProduk from "../data/dataProduk"
+
 
 import {
     CAvatar,
@@ -21,8 +24,11 @@ import {
 import { CChart } from '@coreui/react-chartjs'
 
 export default function StatistikPenjualan() {
+
+    // dataProduk = dataProduk.map((val)=>val.tittle);
+
   return (
-    <CCard className="mb-4">
+    <CCard className="m-4">
         <CCardHeader>
           <h5 className="text-center card-title">Statistik Penjualan</h5>
         </CCardHeader>
