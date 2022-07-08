@@ -8,7 +8,7 @@ import Dashboard from 'src/views/dashboard/Dashboard'
 import SPenjualan from 'src/views/sPenjualan/SPenjualan'
 import SKeuangan from 'src/views/sKeuangan/SKeuangan'
 import LProduk from 'src/views/lProduk/main/LProduk'
-import LKategori from 'src/views/lKategori/LKategori'
+import LKategori from 'src/views/lKategori/main/LKategori'
 import MStok from 'src/views/mStok/MStok'
 // routes config
 import routes from '../routes'
