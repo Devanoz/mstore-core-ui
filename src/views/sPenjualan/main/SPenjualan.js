@@ -1,4 +1,6 @@
 import React from 'react'
+//import data from
+import dataProduk from '../data/dataProduk'
 
 import {
   CAvatar,
@@ -51,20 +53,45 @@ import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
 
-import WidgetsBrand from '../widgets/WidgetsBrand'
-import WidgetsDropdown from '../widgets/WidgetsDropdown'
+//import from child
+import StatistikPenjualan from '../child/StatistikPenjualan'
+import RasioPenjualan from "../child/RasioPenjualan"
+// import WidgetsBrand from '../widgets/WidgetsBrand'
+import WidgetsDropdown from '../../widgets/WidgetsDropdown'
+import { data } from 'core-js/internals/is-forced'
 
-const SKeuangan = () => {
+const SPenjualan = () => {
   return (
     <>
-      <CRow>
-        <CCol md={12}>
-          <h3>Bissmillahirahmanirahim</h3>
+      <CRow className="m-4">
+        <CCol md={9}>
+          <CCard>
+            <CCardBody>col1</CCardBody>
+          </CCard>
+         
+        </CCol>
+
+        <CCol md={3}>
+          <CCard>
+            <CCardBody>col2</CCardBody>
+          </CCard>
+         
         </CCol>
       </CRow>
-      <WidgetsDropdown />
+
+      <CRow>
+        <CCol>
+          <StatistikPenjualan />
+        </CCol>
+      </CRow>
+
+      <CRow>
+        <CCol>
+          <RasioPenjualan/>
+        </CCol>
+      </CRow>
     </>
   )
 }
 
-export default SKeuangan
+export default SPenjualan

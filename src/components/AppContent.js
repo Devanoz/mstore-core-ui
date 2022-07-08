@@ -5,13 +5,17 @@ import { CContainer, CSpinner } from '@coreui/react'
 //import sidebar component to appcontent
 import HelloWorld from '../views/pages/hello-world/hello world'
 import Dashboard from 'src/views/dashboard/Dashboard'
-import SPenjualan from 'src/views/sPenjualan/SPenjualan'
-import SKeuangan from 'src/views/sKeuangan/SKeuangan'
+import SPenjualan from 'src/views/sPenjualan/main/SPenjualan'
+import SKeuangan from 'src/views/sKeuangan/main/SKeuangan'
 import LProduk from 'src/views/lProduk/main/LProduk'
 import LKategori from 'src/views/lKategori/main/LKategori'
 import MStok from 'src/views/mStok/MStok'
+
+import EditProduk from "../views/lProduk/form/EditProduk"
 // routes config
 import routes from '../routes'
+
+
 
 const AppContent = () => {
   return (
@@ -26,6 +30,7 @@ const AppContent = () => {
           <Route path="/lProduk" element={<LProduk />} />
           <Route path="/lKategori" element={<LKategori />} />
           <Route path="/mStok" element={<MStok />} />
+          {/* <Route path="/edit-produk" element={<EditProduk />} /> */}
         </Routes>
       </Suspense>
     </CContainer>
@@ -33,17 +38,3 @@ const AppContent = () => {
 }
 
 export default React.memo(AppContent)
-
-// {routes.map((route, idx) => {
-//   return (
-//     route.element && (
-//       <Route
-//         key={idx}
-//         path={route.path}
-//         exact={route.exact}
-//         name={route.name}
-//         element={<route.element />}
-//       />
-//     )
-//   )
-// })}

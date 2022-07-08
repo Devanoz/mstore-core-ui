@@ -18,7 +18,7 @@ import {
   CTableHeaderCell,
   CTableRow,
 } from '@coreui/react'
-import { CChartLine } from '@coreui/react-chartjs'
+import { CChart, CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'
 import CIcon from '@coreui/icons-react'
 import {
@@ -50,6 +50,9 @@ import avatar3 from 'src/assets/images/avatars/3.jpg'
 import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
+
+//import from child
+import TopWidget from "./child/TopWidget"
 
 import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
@@ -180,7 +183,29 @@ const Dashboard = () => {
 
   return (
     <>
-      <WidgetsDropdown />
+      <TopWidget/>
+      <CCard className="mb-4">
+        <CCardHeader>
+          <h5 className="text-center card-title">Statistik Penjualan</h5>
+        </CCardHeader>
+        <CCardBody>
+          <CChart
+            type="line"
+            data={{
+              labels: ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu'],
+              datasets: [
+                {
+                  label: 'Statistik Penjualan',
+                  backgroundColor: 'blue',
+                  data: [219, 230, 210, 211, 197, 200, 255],
+                },
+              ],
+            }}
+            labels="day"
+          />
+        </CCardBody>
+      </CCard>
+
       <CCard className="mb-4">
         <CCardBody>
           <CRow>
@@ -307,6 +332,10 @@ const Dashboard = () => {
           </CRow>
         </CCardFooter>
       </CCard>
+
+
+
+      
 
       <WidgetsBrand withCharts />
 

@@ -57,20 +57,20 @@ export default function ProductList() {
               {dataProduk.map((val) => {
                 return (
                   <CTableRow>
-                  <CTableDataCell>{val.id}</CTableDataCell>
-                  <CTableDataCell className="text-center">{val.tittle}</CTableDataCell>
-                  <CTableDataCell className="text-center">{val.price}</CTableDataCell>
-                  <CTableDataCell className="text-center">{val.stock}</CTableDataCell>
-                  <CTableDataCell className="text-center">{val.image}</CTableDataCell>
-                  <CTableDataCell className="text-center">{val.weight}</CTableDataCell>
-                  <CTableDataCell className="text-center">{val.catogory.tittle}</CTableDataCell>
-                  <CTableDataCell className="text-center">
-                    <CButton className="btn btn-success">edit</CButton>
-                  </CTableDataCell>
-                  <CTableDataCell className="text-center">
-                    <CButton className="btn btn-danger">Delete</CButton>
-                  </CTableDataCell>
-                </CTableRow>
+                    <CTableDataCell>{val.id}</CTableDataCell>
+                    <CTableDataCell className="text-center">{val.tittle}</CTableDataCell>
+                    <CTableDataCell className="text-center">{val.price}</CTableDataCell>
+                    <CTableDataCell className="text-center">{val.stock}</CTableDataCell>
+                    <CTableDataCell className="text-center">{val.image}</CTableDataCell>
+                    <CTableDataCell className="text-center">{val.weight}</CTableDataCell>
+                    <CTableDataCell className="text-center">{val.catogory.tittle}</CTableDataCell>
+                    <CTableDataCell className="text-center">
+                      <CButton className="btn btn-success">edit</CButton>
+                    </CTableDataCell>
+                    <CTableDataCell className="text-center">
+                      <CButton className="btn btn-danger">Delete</CButton>
+                    </CTableDataCell>
+                  </CTableRow>
                 )
               })}
             </CTableBody>
