@@ -24,7 +24,7 @@ const AppSidebar = () => {
   return (
     <CSidebar
       // style="backgroun-color: blue"
-      style={{ backgroundColor: 'green' }}
+      style={{ backgroundColor: '#15AD4A' }}
       position="fixed"
       unfoldable={unfoldable}
       visible={sidebarShow}
@@ -34,8 +34,6 @@ const AppSidebar = () => {
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
         <img src={logo} alt="logoMStrore" height={50} />
-        {/* <CIcon className="sidebar-brand-full" icon={logoNegative} height={35} />
-        <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} /> */}
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
