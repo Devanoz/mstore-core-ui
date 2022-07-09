@@ -52,8 +52,8 @@ import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
 
-// import WidgetsBrand from '../widgets/WidgetsBrand'
-// import WidgetsDropdown from '../widgets/WidgetsDropdown'
+import WidgetsBrand from '../../widgets/WidgetsBrand'
+import WidgetsDropdown from '../../widgets/WidgetsDropdown'
 import ListKategori from '../child/ListKategori'
 
 const LKategori = () => {
@@ -62,7 +62,9 @@ const LKategori = () => {
     <CContainer>
       <CRow>
         <CCol md={12}>
-          <ListKategori/>
+          <ListKategori />
+
+          <h3></h3>
         </CCol>
       </CRow>
     </CContainer>

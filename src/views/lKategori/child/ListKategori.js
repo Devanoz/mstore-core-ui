@@ -21,25 +21,50 @@ import {
   CTableHeaderCell,
   CTableRow,
 } from '@coreui/react'
-import dataKategori from '../data/dataKategori'
+import { CChartLine } from '@coreui/react-chartjs'
+import { getStyle, hexToRgba } from '@coreui/utils'
+import CIcon from '@coreui/icons-react'
+import {
+  cibCcAmex,
+  cibCcApplePay,
+  cibCcMastercard,
+  cibCcPaypal,
+  cibCcStripe,
+  cibCcVisa,
+  cibGoogle,
+  cibFacebook,
+  cibLinkedin,
+  cifBr,
+  cifEs,
+  cifFr,
+  cifIn,
+  cifPl,
+  cifUs,
+  cibTwitter,
+  cilCloudDownload,
+  cilPeople,
+  cilUser,
+  cilUserFemale,
+} from '@coreui/icons'
+import second from '../data/dataKategori'
 import { data } from 'core-js/internals/is-forced'
+import dataKategori from '../data/dataKategori'
 
 export default function ListKategori() {
-  const titleKategori = dataKategori.map((data) => data.title)
+  const TitleKategori = dataKategori.map((data) => data.title)
+
   return (
     <CRow>
-      {titleKategori.map((value) => {
+      {TitleKategori.map((value) => {
         return (
-          <CCol md={4} className="my-3">
-            <CCard style={{ width: '18rem' }}>
-              <CCardImage orientation="top" src="../../../assets/images/react.jpg" />
-              <CCardBody>
-                <CCardTitle></CCardTitle>
-                <CCardText>...</CCardText>
-                <CButton href="#">lihat</CButton>
-              </CCardBody>
-            </CCard>
-          </CCol>
+          <CCard style={{ width: '18rem' }}>
+            <CCardImage orientation="top" src="/images/react.jpg" />
+            <CCardBody>
+              <CCardTitle>{value}</CCardTitle>
+              <CCardText>Akhmad ramadhan</CCardText>
+              <CButton href="#">See Product</CButton>
+            </CCardBody>
+          </CCard>
         )
       })}
     </CRow>
