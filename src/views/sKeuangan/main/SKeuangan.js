@@ -57,6 +57,7 @@ import LPendapatan from '../child/LPendapatan'
 import BlnLineChart from '../child/BlnLineChart'
 import HrLineChart from '../child/HrLineChart'
 import MguLineChart from '../child/MguLineChart'
+import Bar4Tahunan from '../child/Bar4Tahunan'
 const SKeuangan = () => {
   return (
     <>
@@ -81,6 +82,12 @@ const SKeuangan = () => {
         </CCol>
         <CCol md={4}>
           <BlnLineChart />
+        </CCol>
+      </CRow>
+
+      <CRow>
+        <CCol md={12}>
+          <Bar4Tahunan />
         </CCol>
       </CRow>
     </>

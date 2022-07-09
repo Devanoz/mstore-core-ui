@@ -8,7 +8,7 @@ export default function MguLineChart() {
   return (
     <CCard className="mt-4">
       <CCardHeader>
-        <h5 className="text-center card-title">Visualisasi Pendapatan Harian</h5>
+        <h5 className="text-center card-title">Visualisasi Pendapatan Mingguan</h5>
       </CCardHeader>
       <CCardBody>
         <CChart
@@ -22,7 +22,7 @@ export default function MguLineChart() {
             ],
             datasets: [
               {
-                label: 'Pendapatan Harian',
+                label: 'Pendapatan Mingguan',
                 backgroundColor: 'rgba(21, 173, 74, 0.2)',
                 borderColor: 'rgba(0, 0, 0, 1)',
                 pointBackgroundColor: 'rgba(21, 173, 74, 1)',
