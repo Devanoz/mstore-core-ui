@@ -20,13 +20,10 @@ import { cilArrowBottom, cilArrowTop, cilOptions } from '@coreui/icons'
 
 export default function LPendapatan() {
   const hr = hriPendapatan.map((data)=> data.hari);
+  const Mgu = mguPendapatan.map((data)=> data.minggu);
+  const bln = blnPendapatan.map((data)=> data.bulan);
 
   return (
-    <CCard className="m-4">
-      <CCardHeader>
-        <h5 className="text-center">Pendapatan Perusahaan</h5>
-      </CCardHeader>
-      <CCardBody>
         <CRow>
           <CCol sm={6} lg={3}>
             <CWidgetStatsA
@@ -328,7 +325,5 @@ export default function LPendapatan() {
             />
           </CCol>
         </CRow>
-      </CCardBody>
-    </CCard>
   )
 }
