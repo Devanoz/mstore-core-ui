@@ -20,6 +20,7 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
+CLink,
 } from '@coreui/react'
 import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'
@@ -63,7 +64,7 @@ export default function ListKategori() {
               <CCardBody>
                 <CCardTitle>{value}</CCardTitle>
                 <CCardText>Akhmad ramadhan</CCardText>
-                <CButton href="#">See Product</CButton>
+                <CButton href="/#/sPenjualan" >See Product</CButton>
               </CCardBody>
             </CCard>
           </CCol>
