@@ -73,17 +73,7 @@ const Dashboard = () => {
 
   const dtProduk = dataProduk.map((data) => data.title)
 
-  const progressGroupExample1 = [
-    { title: 'Senin',  terjual: 73 },
-    { title: 'Selasa', terjual: 56},
-    { title: 'Rabu', terjual: 12},
-    { title: 'Kamis', terjual: 43},
-    { title: 'Jumat', terjual: 22},
-    { title: 'Sabtu', terjual: 53},
-    { title: 'Minggu', terjual: 9},
-  ]
-
-  const progressGroupExample2 = [
+  const genderPembeli = [
     { title: 'Male', icon: cilUser, value: 53 },
     { title: 'Female', icon: cilUserFemale, value: 43 },
   ]
@@ -347,7 +337,7 @@ const Dashboard = () => {
       <CRow>
         <CCol xs>
           <CCard className="mb-4">
-            <CCardHeader>LaluLintas {' & '} Sales</CCardHeader>
+            <CCardHeader>Lalu Lintas Hari Ini</CCardHeader>
             <CCardBody>
               <CRow>
                 <CCol xs={12} md={6} xl={6}>
@@ -400,7 +390,7 @@ const Dashboard = () => {
 
                   <hr className="mt-0" />
 
-                  {progressGroupExample2.map((item, index) => (
+                  {genderPembeli.map((item, index) => (
                     <div className="progress-group mb-4" key={index}>
                       <div className="progress-group-header">
                         <CIcon className="me-2" icon={item.icon} size="lg" />
