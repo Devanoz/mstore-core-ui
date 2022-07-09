@@ -24,7 +24,7 @@ const AppSidebar = () => {
   return (
     <CSidebar
       // style="backgroun-color: blue"
-      style={{ backgroundColor: '#15AD4A' }}
+      style={{ backgroundColor: '#15AD4A'}}
       position="fixed"
       unfoldable={unfoldable}
       visible={sidebarShow}
@@ -37,7 +37,7 @@ const AppSidebar = () => {
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
-          <AppSidebarNav items={navigation} />
+          <AppSidebarNav style={{color:'#ffffff'}} items={navigation} />
         </SimpleBar>
       </CSidebarNav>
       <CSidebarToggler

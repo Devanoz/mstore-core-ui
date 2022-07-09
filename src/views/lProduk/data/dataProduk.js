@@ -9,7 +9,8 @@ const produk = [
     catogory: {
       tittle: 'kaos',
       image: 'none',
-    }
+    },
+    terjual:20
   },
   {
     id:2,
