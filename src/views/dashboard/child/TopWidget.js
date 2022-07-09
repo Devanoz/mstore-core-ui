@@ -16,7 +16,7 @@ import React from 'react'
 export default function TopWidget() {
   return (
     <CRow>
-      <CCol sm={4}>
+      <CCol sm={4} md={3}>
         <CWidgetStatsA
           className="mb-4"
           color="primary"
@@ -103,7 +103,7 @@ export default function TopWidget() {
           }
         />
       </CCol>
-      <CCol sm={4}>
+      <CCol sm={4} md={3}>
         <CWidgetStatsA
           className="mb-4"
           color="primary"
@@ -190,7 +190,7 @@ export default function TopWidget() {
           }
         />
       </CCol>
-      <CCol sm={4}>
+      <CCol sm={4} md={3}>
         <CWidgetStatsA
           className="mb-4"
           color="primary"
@@ -277,7 +277,7 @@ export default function TopWidget() {
           }
         />
       </CCol>
-      <CCol sm={4}>
+      <CCol sm={4} md={3}>
         <CWidgetStatsA
           className="mb-4"
           color="primary"

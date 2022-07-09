@@ -1,16 +1,13 @@
 import React from 'react'
-
-//import data product
-import dataKategori from '../data/dataKategori'
-
+//improt data
 import {
+  CCardImage,
+  CCardTitle,
+  CCardText,
   CAvatar,
   CButton,
   CButtonGroup,
-  CCardImage,
-  CCardTitle,
   CCard,
-  CCardText,
   CCardBody,
   CCardFooter,
   CCardHeader,
@@ -51,24 +48,27 @@ import {
 } from '@coreui/icons'
 import second from '../data/dataKategori'
 import { data } from 'core-js/internals/is-forced'
+import dataKategori from '../data/dataKategori'
 
 export default function ListKategori() {
-
-  const TitleKategori = dataKategori.map((data)=>data.title)
-
+  const TitleKategori = dataKategori.map((data) => data.title)
 
   return (
     <CRow>
       {TitleKategori.map((value) => {
-        return(
-      <CCard style={{ width: '18rem' }}>
-  <CCardImage orientation="top" src="/images/react.jpg" />
-  <CCardBody>
-    <CCardTitle className='text-center' >{value}</CCardTitle>
-    <CButton className='' href="#">See Product</CButton>
-  </CCardBody>
-</CCard>)})}
-</CRow>
-    
+        return (
+          <CCol md={4} className="my-3">
+            <CCard style={{ width: '18rem' }}>
+              <CCardImage orientation="top" src="/images/react.jpg" />
+              <CCardBody>
+                <CCardTitle className='text-center'>{value}</CCardTitle>
+                <CCardText className='text-center'>Akhmad ramadhan</CCardText>
+                <CButton style={{alignItems : 'center'}} href="#">See Product</CButton>
+              </CCardBody>
+            </CCard>
+          </CCol>
+        )
+      })}
+    </CRow>
   )
 }

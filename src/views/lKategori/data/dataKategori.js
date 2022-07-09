@@ -1,54 +1,44 @@
-const kategori = [
-    {
-        id:1,
-        title: 'kaos',
-        image: 'none',
-    },
-    {
-        id:2,
-        title: 'baju',
-        image: 'none',
-    },
-    {
-        id:3,
-        title: 'gantungan kunci',
-        image: 'none',
-    },
-    {
-        id:4,
-        title: 'topi',
-        image: 'none',
-    },
-    {
-        id:5,
-        title: 'blankon',
-        image: 'none',
-    },
-    {
-        id:6, 
-        title: 'keris',
-        image: 'none',
-    },
-    {
-        id:7,
-        title: 'sandal',
-        image: 'none',
-    },
-    {
-        id:8,
-        title: 'tas',
-        image: 'none',
-    },
-    {
-        id:9,
-        title: 'lukisan',
-        image: 'none',
-    },
-    {
-        id:10,
-        title: 'patung',
-        image: 'none',
-    }
-]
+import React from 'react'
+import imageKategori from '../../../assets/images/angular.jpg'
 
-export default kategori;
+const namaKategori = [{
+    id : 1,
+    title : 'Kaos',
+    image : imageKategori
+},
+{
+    id:2,
+    title : 'Sandal',
+    image : imageKategori
+},
+{
+    id : 3,
+    title : 'Blangkon',
+    image : imageKategori
+},
+{
+    id : 4,
+    title : 'Gantungan Kunci',
+    image : imageKategori
+},
+{
+    id : 5,
+    title : 'Batik',
+    image : imageKategori
+},
+{
+    id : 6,
+    title : 'Tas',
+    image : imageKategori
+},
+{
+    id : 7,
+    title : 'Jaket',
+    image : imageKategori
+},
+{
+    id : 8,
+    title : 'Gerabah',
+    image : imageKategori
+}]
+export default namaKategori;

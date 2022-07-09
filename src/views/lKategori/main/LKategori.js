@@ -9,6 +9,7 @@ import {
   CCardFooter,
   CCardHeader,
   CCol,
+  CContainer,
   CProgress,
   CRow,
   CTable,
@@ -58,6 +59,7 @@ import ListKategori from '../child/ListKategori'
 const LKategori = () => {
   return (
     <>
+    <CContainer>
       <CRow>
         <CCol md={12}>
           <ListKategori />
@@ -65,6 +67,10 @@ const LKategori = () => {
           <h3></h3>
         </CCol>
       </CRow>
+    </CContainer>
+      
+
+      {/* <WidgetsDropdown /> */}
     </>
   )
 }

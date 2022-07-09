@@ -2,6 +2,8 @@ import React from 'react'
 //import data from
 import dataProduk from '../data/dataProduk'
 
+import MultipleLineChart from "../child/MultipleLineChart"
+
 import {
   CAvatar,
   CButton,
@@ -88,6 +90,12 @@ const SPenjualan = () => {
       <CRow>
         <CCol>
           <RasioPenjualan/>
+        </CCol>
+      </CRow>
+
+      <CRow>
+        <CCol>
+          <MultipleLineChart/>
         </CCol>
       </CRow>
     </>
