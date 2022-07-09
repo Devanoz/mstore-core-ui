@@ -63,8 +63,6 @@ const LKategori = () => {
       <CRow>
         <CCol md={12}>
           <ListKategori />
-
-          <h3></h3>
         </CCol>
       </CRow>
     </CContainer>
