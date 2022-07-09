@@ -3,13 +3,14 @@ const produk = [
       id:1,
       tittle: 'kaos malioboro',
       price: 150000,
-      stock: 350,
+      stock: 123,
       image: 'none',
       weight: 1,
       catogory: {
         tittle: 'kaos',
         image: 'none',
-      }
+      },
+      terjual :78
     },
     {
       id:2,
@@ -21,7 +22,8 @@ const produk = [
       catogory: {
         tittle: 'kaos',
         image: 'none',
-      }
+      },
+      terjual :78
     },
     {
       id:3,
@@ -33,7 +35,8 @@ const produk = [
       catogory: {
         tittle: 'kaos',
         image: 'none',
-      }
+      },
+      terjual :78
     },
     {
       id:4,
@@ -45,7 +48,8 @@ const produk = [
       catogory: {
         tittle: 'kaos',
         image: 'none',
-      }
+      },
+      terjual :78
     },
   ]
   

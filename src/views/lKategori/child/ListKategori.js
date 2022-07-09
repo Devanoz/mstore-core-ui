@@ -62,9 +62,9 @@ export default function ListKategori() {
             <CCard style={{ width: '18rem' }}>
               <CCardImage orientation="top" src="/images/react.jpg" />
               <CCardBody>
-                <CCardTitle>{value}</CCardTitle>
-                <CCardText>Akhmad ramadhan</CCardText>
-                <CButton href="/#/sPenjualan" >See Product</CButton>
+                <CCardTitle className='text-center'>{value}</CCardTitle>
+                <CCardText className='text-center'>Akhmad ramadhan</CCardText>
+                <CButton style={{alignItems : 'center'}} href="#">See Product</CButton>
               </CCardBody>
             </CCard>
           </CCol>

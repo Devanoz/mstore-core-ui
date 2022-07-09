@@ -53,9 +53,12 @@ import avatar6 from 'src/assets/images/avatars/6.jpg'
 
 //import from child
 import TopWidget from "./child/TopWidget"
+import dataProduk from '../sPenjualan/data/dataProduk'
 
 import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
+
+
 
 const Dashboard = () => {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
@@ -68,14 +71,16 @@ const Dashboard = () => {
     { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
   ]
 
+  const dtProduk = dataProduk.map((data) => data.title)
+
   const progressGroupExample1 = [
-    { title: 'Monday', value1: 34, value2: 78 },
-    { title: 'Tuesday', value1: 56, value2: 94 },
-    { title: 'Wednesday', value1: 12, value2: 67 },
-    { title: 'Thursday', value1: 43, value2: 91 },
-    { title: 'Friday', value1: 22, value2: 73 },
-    { title: 'Saturday', value1: 53, value2: 82 },
-    { title: 'Sunday', value1: 9, value2: 69 },
+    { title: 'Senin',  terjual: 73 },
+    { title: 'Selasa', terjual: 56},
+    { title: 'Rabu', terjual: 12},
+    { title: 'Kamis', terjual: 43},
+    { title: 'Jumat', terjual: 22},
+    { title: 'Sabtu', terjual: 53},
+    { title: 'Minggu', terjual: 9},
   ]
 
   const progressGroupExample2 = [
@@ -315,7 +320,7 @@ const Dashboard = () => {
 
       
 
-      <WidgetsBrand withCharts />
+      {/* <WidgetsBrand withCharts /> */}
 
       <CRow>
         <CCol xs>
@@ -340,14 +345,16 @@ const Dashboard = () => {
                   </CRow>
 
                   <hr className="mt-0" />
-                  {progressGroupExample1.map((item, index) => (
-                    <div className="progress-group mb-4" key={index}>
+                  <div className="mb-5 mt-4 text-center">
+                      <h5>Penjualan Perhari</h5>
+                      </div>
+                  {dataProduk.map((value) => (
+                    <div className="mb-4" key={value}>
                       <div className="progress-group-prepend">
-                        <span className="text-medium-emphasis small">{item.title}</span>
+                        <span className="text-medium-emphasis small ">{value.tittle}</span>
                       </div>
                       <div className="progress-group-bars">
-                        <CProgress thin color="info" value={item.value1} />
-                        <CProgress thin color="danger" value={item.value2} />
+                        <CProgress thin color="info" value={value.terjual} />
                       </div>
                     </div>
                   ))}
