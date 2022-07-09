@@ -57,14 +57,16 @@ export default function ListKategori() {
     <CRow>
       {TitleKategori.map((value) => {
         return (
-          <CCard style={{ width: '18rem' }}>
-            <CCardImage orientation="top" src="/images/react.jpg" />
-            <CCardBody>
-              <CCardTitle>{value}</CCardTitle>
-              <CCardText>Akhmad ramadhan</CCardText>
-              <CButton href="#">See Product</CButton>
-            </CCardBody>
-          </CCard>
+          <CCol md={4} className="my-3">
+            <CCard style={{ width: '18rem' }}>
+              <CCardImage orientation="top" src="/images/react.jpg" />
+              <CCardBody>
+                <CCardTitle>{value}</CCardTitle>
+                <CCardText>Akhmad ramadhan</CCardText>
+                <CButton href="#">See Product</CButton>
+              </CCardBody>
+            </CCard>
+          </CCol>
         )
       })}
     </CRow>
