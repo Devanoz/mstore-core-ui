@@ -53,13 +53,16 @@ import avatar6 from 'src/assets/images/avatars/6.jpg'
 
 import WidgetsBrand from '../../widgets/WidgetsBrand'
 import WidgetsDropdown from '../../widgets/WidgetsDropdown'
+import ListKategori from '../child/ListKategori'
 
 const LKategori = () => {
   return (
     <>
       <CRow>
         <CCol md={12}>
-          <h3>Bissmillahirahmanirahim</h3>
+          <ListKategori />
+
+          <h3></h3>
         </CCol>
       </CRow>
     </>

@@ -7,7 +7,10 @@ import {
   CAvatar,
   CButton,
   CButtonGroup,
+  CCardImage,
+  CCardTitle,
   CCard,
+  CCardText,
   CCardBody,
   CCardFooter,
   CCardHeader,
@@ -46,9 +49,29 @@ import {
   cilUser,
   cilUserFemale,
 } from '@coreui/icons'
+import second from '../data/dataKategori'
+import { data } from 'core-js/internals/is-forced'
 
 export default function ListKategori() {
+
+  const TitleKategori = dataKategori.map((data)=>data.title)
+
+
   return (
-    <div>ListKategori</div>
+    <CRow>
+      {TitleKategori.map((value) => {
+        return(
+      <CCard style={{ width: '18rem' }}>
+  <CCardImage orientation="top" src="/images/react.jpg" />
+  <CCardBody>
+    <CCardTitle >{value}</CCardTitle>
+    <CCardText>
+      Akhmad ramadhan
+    </CCardText>
+    <CButton href="#">See Product</CButton>
+  </CCardBody>
+</CCard>)})}
+</CRow>
+    
   )
 }
