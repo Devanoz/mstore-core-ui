@@ -20,6 +20,7 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
+CLink,
 } from '@coreui/react'
 import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'

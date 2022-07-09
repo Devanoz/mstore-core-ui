@@ -65,7 +65,7 @@ export default function ProductList() {
                     <CTableDataCell className="text-center">{val.weight}</CTableDataCell>
                     <CTableDataCell className="text-center">{val.catogory.tittle}</CTableDataCell>
                     <CTableDataCell className="text-center">
-                      <CButton className="btn btn-success">edit</CButton>
+                      <CButton className="btn btn-success" href="/#/lProduk/edit">edit</CButton>
                     </CTableDataCell>
                     <CTableDataCell className="text-center">
                       <CButton className="btn btn-danger">Delete</CButton>

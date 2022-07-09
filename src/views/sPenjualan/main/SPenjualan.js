@@ -58,6 +58,7 @@ import avatar6 from 'src/assets/images/avatars/6.jpg'
 //import from child
 import StatistikPenjualan from '../child/StatistikPenjualan'
 import RasioPenjualan from "../child/RasioPenjualan"
+import StatistikJumlahPenjualan from '../child/StatistikJumlahPenjualan'
 // import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../../widgets/WidgetsDropdown'
 import { data } from 'core-js/internals/is-forced'
@@ -65,22 +66,11 @@ import { data } from 'core-js/internals/is-forced'
 const SPenjualan = () => {
   return (
     <>
-      <CRow className="m-4">
-        <CCol md={9}>
-          <CCard>
-            <CCardBody>col1</CCardBody>
-          </CCard>
-         
-        </CCol>
-
-        <CCol md={3}>
-          <CCard>
-            <CCardBody>col2</CCardBody>
-          </CCard>
-         
+      <CRow>
+        <CCol>
+          <StatistikJumlahPenjualan/>
         </CCol>
       </CRow>
-
       <CRow>
         <CCol>
           <StatistikPenjualan />

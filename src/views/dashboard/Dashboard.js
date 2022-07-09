@@ -179,29 +179,7 @@ const Dashboard = () => {
   return (
     <>
       <TopWidget/>
-      <CCard className="mb-4">
-        <CCardHeader>
-          <h5 className="text-center card-title">Statistik Penjualan</h5>
-        </CCardHeader>
-        <CCardBody>
-          <CChart
-            type="line"
-            data={{
-              labels: ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu'],
-              datasets: [
-                {
-                  label: 'Statistik Penjualan',
-                  backgroundColor: 'blue',
-                  data: [219, 230, 210, 211, 197, 200, 255],
-                },
-              ],
-            }}
-            labels="day"
-          />
-        </CCardBody>
-      </CCard>
-
-      <CCard className="mb-4">
+      {/* <CCard className="mb-4">
         <CCardBody>
           <CRow>
             <CCol sm={5}>
@@ -479,7 +457,7 @@ const Dashboard = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
+      </CRow> */}
     </>
   )
 }
