@@ -59,6 +59,7 @@ import Traffic from './child/Traffic'
 
 import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
+import ProductKategori from './child/ProductKategori'
 
 
 
@@ -74,11 +75,14 @@ const Dashboard = () => {
 
       <WidgetsBrand withCharts />
 
+      <ProductKategori />
+
       <CRow>
         <CCol xs>
           <LaluLintas />
         </CCol>
-      </CRow> 
+      </CRow>
+       
     </>
   )
 }
