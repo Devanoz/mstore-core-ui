@@ -31,9 +31,9 @@ export default function LPendapatan() {
               style={{ backgroundColor: '#15AD4A', color: 'white' }}
               value={
                 <>
-                  $9.000{' '}
+                  Rp1.760.000{' '}
                   <span className="fs-6 fw-normal">
-                    (40.9% <CIcon icon={cilArrowTop} />)
+                    (33.9% <CIcon icon={cilArrowTop} />)
                   </span>
                 </>
               }
@@ -106,9 +106,9 @@ export default function LPendapatan() {
               style={{ backgroundColor: 'rgb(0, 0, 0, 0.2)', color: 'black' }}
               value={
                 <>
-                  $9.000{' '}
+                  Rp8.000.000{' '}
                   <span className="fs-6 fw-normal">
-                    (40.9% <CIcon icon={cilArrowTop} />)
+                    (13.9% <CIcon icon={cilArrowTop} />)
                   </span>
                 </>
               }
@@ -181,9 +181,9 @@ export default function LPendapatan() {
               style={{ backgroundColor: 'rgb(0, 0, 0, 0.2)', color: 'black' }}
               value={
                 <>
-                  $9.000{' '}
+                  Rp20.000.000{' '}
                   <span className="fs-6 fw-normal">
-                    (40.9% <CIcon icon={cilArrowTop} />)
+                    (24.9% <CIcon icon={cilArrowTop} />)
                   </span>
                 </>
               }
@@ -256,9 +256,9 @@ export default function LPendapatan() {
               style={{ backgroundColor: 'rgb(0, 0, 0, 0.2)', color: 'black' }}
               value={
                 <>
-                  $9.000{' '}
+                  Rp100.010.000{' '}
                   <span className="fs-6 fw-normal">
-                    (40.9% <CIcon icon={cilArrowTop} />)
+                    (34.9% <CIcon icon={cilArrowTop} />)
                   </span>
                 </>
               }
