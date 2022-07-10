@@ -40,22 +40,22 @@ const dataStok = [{
 },
 {
     id : 9,
-    title : 'Gerabah',
+    title : 'Jam Tangan',
     stock : 453
 },
 {
     id : 10,
-    title : 'Gerabah',
+    title : 'Gelang Tangan',
     stock : 435
 },
 {
     id : 11,
-    title : 'Gerabah',
+    title : 'Liontin',
     stock : 345
 },
 {
     id : 12,
-    title : 'Gerabah',
+    title : 'Minyak Wangi',
     stock : 350
 }
 
