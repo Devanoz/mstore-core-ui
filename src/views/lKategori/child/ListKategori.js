@@ -58,13 +58,16 @@ export default function ListKategori() {
     <CRow>
       {dataKategori.map((value) => {
         return (
-          <CCol sm={4} md={3} className="my-3">
+          <CCol sm={4} md={4} className="my-3">
             <CCard style={{ width: '18rem', overflow:'hidden' }}>
               <CCardImage className='CardImage' orientation="bottom" src={value.image} />
               <CCardBody>
                 <CCardTitle className='text-center'>{value.title}</CCardTitle>
-                <CCardText className='text-center'>Akhmad ramadhan</CCardText>
+                {/* <CCardText className='text-center'>{value.id}</CCardText> */}
+                <div className='text-center'>
                 <CButton style={{alignItems : 'center'}} href="#">See Product</CButton>
+                </div>
+                
               </CCardBody>
             </CCard>
           </CCol>
