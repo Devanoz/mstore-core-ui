@@ -58,7 +58,7 @@ export default function ListKategori() {
     <CRow>
       {dataKategori.map((value) => {
         return (
-          <CCol sm={4} md={3} className="my-3">
+          <CCol sm={4} md={4} className="my-3">
             <CCard style={{ width: '18rem' }}>
               <CCardImage orientation="top" src={value.image} />
               <CCardBody>

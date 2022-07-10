@@ -45,7 +45,7 @@ import {
   } from '@coreui/icons'
 import { data } from 'core-js/internals/is-forced'
 
-export default function Traffic() {
+export default function   Traffic() {
     const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
     const progressExample = [
         { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },

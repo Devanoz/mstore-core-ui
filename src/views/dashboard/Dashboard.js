@@ -60,6 +60,8 @@ import Traffic from './child/Traffic'
 import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
 
+//import from sidebar
+
 
 
 const Dashboard = () => {
@@ -82,11 +84,11 @@ const Dashboard = () => {
 
       <Traffic/>
 
-      <WidgetsBrand withCharts />
+      {/* <WidgetsBrand withCharts /> */}
 
       <CRow>
         <CCol xs>
-          <LaluLintas />
+          {/* <LaluLintas /> */}
         </CCol>
       </CRow> 
     </>
