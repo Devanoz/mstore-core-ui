@@ -51,7 +51,7 @@ import {
   import avatar6 from 'src/assets/images/avatars/6.jpg'
   
   //import from child
-  import TopWidget from "../child/TopWidget"
+  import TopWidget from "../../sPenjualan/child/TopWidget"
   import dataProduk from '../../lProduk/data/dataProduk'
   
   import WidgetsBrand from '../../widgets/WidgetsBrand'

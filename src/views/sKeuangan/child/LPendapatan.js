@@ -25,7 +25,7 @@ export default function LPendapatan() {
 
   return (
         <CRow>
-          <CCol sm={6} lg={3}>
+          <CCol sm={6} xl={3} className="mx-auto">
             <CWidgetStatsA
               className="mb-1"
               style={{ backgroundColor: '#15AD4A', color: 'white' }}
@@ -100,7 +100,7 @@ export default function LPendapatan() {
             />
           </CCol>
 
-          <CCol sm={6} lg={3}>
+          <CCol sm={6} xl={3} className="mx-auto">
             <CWidgetStatsA
               className="mb-1"
               style={{ backgroundColor: 'rgb(0, 0, 0, 0.2)', color: 'black' }}
@@ -175,7 +175,7 @@ export default function LPendapatan() {
             />
           </CCol>
 
-          <CCol sm={6} lg={3}>
+          <CCol sm={6} xl={3} className="mx-auto">
             <CWidgetStatsA
               className="mb-1"
               style={{ backgroundColor: 'rgb(0, 0, 0, 0.2)', color: 'black' }}
@@ -250,7 +250,7 @@ export default function LPendapatan() {
             />
           </CCol>
 
-          <CCol sm={6} lg={3}>
+          <CCol sm={6} xl={3} className="mx-auto">
             <CWidgetStatsA
               className="mb-1"
               style={{ backgroundColor: 'rgb(0, 0, 0, 0.2)', color: 'black' }}

@@ -54,42 +54,19 @@ import avatar6 from 'src/assets/images/avatars/6.jpg'
 // import WidgetsBrand from '../../widgets/WidgetsBrand'
 // import WidgetsDropdown from '../../widgets/WidgetsDropdown'
 import LPendapatan from '../child/LPendapatan'
-import BlnLineChart from '../child/BlnLineChart'
-import HrLineChart from '../child/HrLineChart'
-import MguLineChart from '../child/MguLineChart'
 import Bar4Tahunan from '../child/Bar4Tahunan'
+import SKLineChart from '../child/SKLineChart'
+
 const SKeuangan = () => {
   return (
     <>
-      <CRow>
-        <CCol md={12}>
-          <h3>Pendapatan Perusahaan</h3>
-        </CCol>
-      </CRow>
-
       <CRow>
         <CCol md={12}>
           <LPendapatan />
         </CCol>
       </CRow>
 
-      <CRow>
-        <CCol md={4}>
-          <HrLineChart />
-        </CCol>
-        <CCol md={4}>
-          <MguLineChart />
-        </CCol>
-        <CCol md={4}>
-          <BlnLineChart />
-        </CCol>
-      </CRow>
-
-      <CRow>
-        <CCol md={12}>
-          <Bar4Tahunan />
-        </CCol>
-      </CRow>
+      <SKLineChart />
     </>
   )
 }

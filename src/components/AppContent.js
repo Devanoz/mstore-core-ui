@@ -9,7 +9,7 @@ import SPenjualan from 'src/views/sPenjualan/main/SPenjualan'
 import SKeuangan from 'src/views/sKeuangan/main/SKeuangan'
 import LProduk from 'src/views/lProduk/main/LProduk'
 import LKategori from 'src/views/lKategori/main/LKategori'
-import MStok from 'src/views/mStok/MStok'
+import MStok from 'src/views/mStok/main/MStok'
 
 import EditProduk from "../views/lProduk/form/EditProduk"
 // routes config

@@ -1,3 +1,5 @@
+const { val } = require("core-js/internals/is-forced")
+
 const empatTH = [
     {
         id:1,

@@ -1,4 +1,6 @@
 import React from 'react'
+import LabelStok from '../child/LabelStok'
+import Keterisian from '../child/Keterisian'
 
 import {
   CAvatar,
@@ -51,18 +53,16 @@ import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
 
-import WidgetsBrand from '../widgets/WidgetsBrand'
-import WidgetsDropdown from '../widgets/WidgetsDropdown'
-
+import WidgetsBrand from '../../widgets/WidgetsBrand'
+import WidgetsDropdown from '../../widgets/WidgetsDropdown'
+import Keterangan from 'src/views/lProduk/child/Keterangan'
+import TabelStok from '../child/TabelStok'
 const MStok = () => {
   return (
     <>
-      <CRow>
-        <CCol md={12}>
-          <h3>Bissmillahirahmanirahim</h3>
-        </CCol>
-      </CRow>
-      <WidgetsDropdown />
+      <LabelStok />
+      <Keterisian />
+      <TabelStok />
     </>
   )
 }

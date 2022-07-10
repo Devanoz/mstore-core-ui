@@ -20,7 +20,7 @@ export default function TopWidget() {
 
   const quartalPertama = blnPendapatan.filter(
     (data) =>{
-        return(data.id < '5')
+        return(data.id < 5)
     }
     )
   const quartalKedua = blnPendapatan.filter(
@@ -35,7 +35,7 @@ export default function TopWidget() {
 
   return (
     <CRow>
-      <CCol sm={3} md={4}>
+      <CCol sm={4} md={4}>
         <CWidgetStatsA
           className="mb-4"
           style={{backgroundColor:'#2E0249', color:'white'
@@ -124,7 +124,7 @@ export default function TopWidget() {
           }
         />
       </CCol>
-      <CCol sm={3} md={4}>
+      <CCol sm={4} md={4}>
         <CWidgetStatsA
           className="mb-4"
           style={{backgroundColor:'#570A57', color:'white'
@@ -213,7 +213,7 @@ export default function TopWidget() {
           }
         />
       </CCol>
-      <CCol sm={3} md={4}>
+      <CCol sm={4} md={4}>
         <CWidgetStatsA
           className="mb-4"
           style={{backgroundColor:'#A91079', color:'white'

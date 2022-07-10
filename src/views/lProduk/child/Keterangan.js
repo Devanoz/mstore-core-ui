@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Keterangan() {
   return (
-    <CCard>
+    <CCard className='mb-4'>
       <CCardHeader>keterangan</CCardHeader>
       <CCardBody>
         <div>hello world </div>

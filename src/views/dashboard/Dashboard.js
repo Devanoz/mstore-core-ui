@@ -52,8 +52,7 @@ import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
 
 //import from child
-import TopWidget from "./child/TopWidget"
-import dataProduk from '../sPenjualan/data/dataProduk'
+import TopWidget from "../sPenjualan/child/TopWidget"
 import LaluLintas from './child/LaluLitas'
 import Traffic from './child/Traffic'
 
@@ -70,15 +69,13 @@ const Dashboard = () => {
     <>
       <TopWidget/>
 
-      <Traffic/>
-
+      {/* <Traffic/>
       <WidgetsBrand withCharts />
-
       <CRow>
         <CCol xs>
           <LaluLintas />
         </CCol>
-      </CRow> 
+      </CRow>  */}
     </>
   )
 }

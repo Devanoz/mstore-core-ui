@@ -3,12 +3,12 @@ const { data } = require("core-js/internals/is-forced")
 const blnPendapatan = [
     {
         id:1,
-        bulan:'Januari',
+        bulan:'Jan',
         nominal:90000000,
     },
     {
         id:2,
-        bulan:'Februari',
+        bulan:'Feb',
         nominal:91500000,
     },
     {
@@ -18,7 +18,7 @@ const blnPendapatan = [
     },
     {
         id:4,
-        bulan:'April',
+        bulan:'Apr',
         nominal:912500000,
     },
     {
@@ -28,37 +28,37 @@ const blnPendapatan = [
     },
     {
         id:6,
-        bulan:'Juni',
+        bulan:'Jun',
         nominal:112500000,
     },
     {
         id:7,
-        bulan:'Juli',
+        bulan:'Jul',
         nominal:101800000,
     },
     {
         id:8,
-        bulan:'Agustus',
+        bulan:'Agu',
         nominal:82000000,
     },
     {
         id:9,
-        bulan:'September',
+        bulan:'Sep',
         nominal:84000000,
     },
     {
         id:10,
-        bulan:'Oktober',
+        bulan:'Okt',
         nominal:91300000,
     },
     {
         id:11,
-        bulan:'November',
+        bulan:'Nov',
         nominal:90900000,
     },
     {
         id:12,
-        bulan:'Desember',
+        bulan:'Des',
         nominal:87700000,
     },
 ]
@@ -89,37 +89,37 @@ const mguPendapatan = [
 const hriPendapatan = [
     {
         id:1,
-        hari:'Senin',
+        hari:'Sen',
         nominal:1200000,
     },
     {
         id:2,
-        hari:'Selasa',
+        hari:'Sel',
         nominal:1250000,
     },
     {
         id:3,
-        hari:'Rabu',
+        hari:'Rab',
         nominal:1350000,
     },
     {
         id:4,
-        hari:'Kamis',
+        hari:'Kam',
         nominal:950000,
     },
     {
         id:5,
-        hari:'Jumat',
+        hari:'Jum',
         nominal:1950000,
     },
     {
         id:6,
-        hari:'Sabtu',
+        hari:'Sab',
         nominal:1380000,
     },
     {
         id:7,
-        hari:'Minggu',
+        hari:'Mgu',
         nominal:1730000,
     },
 ]
