@@ -61,6 +61,11 @@ import WidgetsDropdown from '../widgets/WidgetsDropdown'
 import ProductKategori from './child/ProductKategori'
 
 //import from sidebar
+import SPenjualan from '../sPenjualan/main/SPenjualan'
+import SKeuangan from '../sKeuangan/main/SKeuangan'
+import LProduk from '../lProduk/main/LProduk'
+import LKategori from '../lKategori/main/LKategori'
+import MStok from '../mStok/main/MStok'
 
 
 
@@ -82,6 +87,26 @@ const Dashboard = () => {
         <CCol xs>
           {/* <LaluLintas /> */}
         </CCol>
+      </CRow>
+
+      <CRow className="my-3">
+        <SPenjualan/>
+      </CRow>
+
+      <CRow className="my-3">
+        <SKeuangan/>
+      </CRow>
+
+      <CRow className="my-3">
+        <LProduk/>
+      </CRow>
+
+      <CRow className="my-3">
+        <LKategori/>
+      </CRow>
+
+      <CRow className="my-3">
+        <MStok/>
       </CRow>
        
     </>
