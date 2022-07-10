@@ -48,11 +48,10 @@ import { data } from 'core-js/internals/is-forced'
 export default function   Traffic() {
     const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
     const progressExample = [
-        { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
-        { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
-        { title: 'Pageviews', value: '78.706 Views', percent: 60, color: 'warning' },
-        { title: 'New Users', value: '22.123 Users', percent: 80, color: 'danger' },
-        { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
+        { title: 'Visits', value: '209.877 Users', percent: 40, color: 'success' },
+        { title: 'Click', value: '205.234 Users', percent: 90, color: 'info' },
+        { title: 'Keranjang', value: '145.123 Users', percent: 75.6, color: 'warning' },
+        { title: 'CheckOut', value: '80.123 Users', percent: 40, color: 'danger' },
       ]
     const bulan = blnPendapatan.map((data)=> data.nominal)
     return (
@@ -63,7 +62,7 @@ export default function   Traffic() {
               <h4 id="traffic" className="card-title mb-0">
                 Traffic
               </h4>
-              <div className="small text-medium-emphasis">January - July 2021</div>
+              <div className="small text-medium-emphasis">2022</div>
             </CCol>
             <CCol sm={7} className="d-none d-md-block">
               <CButton color="primary" className="float-end">
@@ -86,10 +85,10 @@ export default function   Traffic() {
           <CChartLine
             style={{ height: '300px', marginTop: '40px' }}
             data={{
-              labels: ['Jancok', 'February', 'March', 'April', 'May', 'June', 'July','August','Sept','Oct','Nov','Dec'],
+              labels: blnPendapatan.map((data)=> data.bulan),
               datasets: [
                 {
-                  label: 'My First dataset',
+                  label: 'Penjualan',
                   backgroundColor: hexToRgba(getStyle('--cui-info'), 10),
                   borderColor: getStyle('--cui-info'),
                   pointHoverBackgroundColor: getStyle('--cui-info'),
@@ -138,7 +137,7 @@ export default function   Traffic() {
           />
         </CCardBody>
         <CCardFooter>
-          <CRow xs={{ cols: 1 }} md={{ cols: 5 }} className="text-center">
+          <CRow xs={{ cols: 1 }} md={{ cols: 4 }} className="text-center">
             {progressExample.map((item, index) => (
               <CCol className="mb-sm-2 mb-0" key={index}>
                 <div className="text-medium-emphasis">{item.title}</div>

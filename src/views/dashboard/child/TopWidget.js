@@ -14,10 +14,24 @@ import { CChartBar, CChartLine } from '@coreui/react-chartjs'
 import { data } from 'core-js/internals/is-forced'
 import React from 'react'
 import dataPendapatan from '../../sKeuangan/data/dataPendapatan'
+import {blnPendapatan} from '../../sKeuangan/data/dataPendapatan'
 
 export default function TopWidget() {
 
+  const quartalPertama = blnPendapatan.filter(
+    (data) =>{
+        return(data.id < '5')
+    }
+    )
+  const quartalKedua = blnPendapatan.filter(
+    (data) =>{
+        return(data.id > 4 && data.id < 9)
+    })
 
+  const quartalKetiga = blnPendapatan.filter(
+    (data) =>{
+        return(data.id > 8)
+    })
 
   return (
     <CRow>
@@ -53,7 +67,8 @@ export default function TopWidget() {
               className="mt-3 mx-3"
               style={{ height: '70px' }}
               data={{
-                labels: ['January', 'February', 'March', 'April'],
+                labels: quartalPertama.map((data)=> data.bulan) ,
+                // labels : ['January','febri'],
                 datasets: [
                   {
                     label: 'Jumlah Produk ',
@@ -142,7 +157,7 @@ export default function TopWidget() {
               className="mt-3 mx-3"
               style={{ height: '70px' }}
               data={{
-                labels: ['May', 'June', 'July','August'],
+                labels: quartalKedua.map((data)=> data.bulan),
                 datasets: [
                   {
                     label: 'Jumlah Produk ',
@@ -230,7 +245,7 @@ export default function TopWidget() {
               className="mt-3 mx-3"
               style={{ height: '70px' }}
               data={{
-                labels: ['September','Oktober','November','Desember'],
+                labels: quartalKetiga.map((data)=> data.bulan),
                 datasets: [
                   {
                     label: 'Jumlah Produk ',
