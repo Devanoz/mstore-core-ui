@@ -1,4 +1,4 @@
-const namaKategori = [{
+const dataStok = [{
     id : 1,
     title : 'Kaos',
     stock : 350
@@ -26,16 +26,38 @@ const namaKategori = [{
 {
     id : 6,
     title : 'Tas',
-    stock : 350
+    stock : 432
 },
 {
     id : 7,
     title : 'Jaket',
-    stock : 350
+    stock : 234
 },
 {
     id : 8,
     title : 'Gerabah',
     stock : 350
-}]
-export default namaKategori;
+},
+{
+    id : 9,
+    title : 'Jam Tangan',
+    stock : 453
+},
+{
+    id : 10,
+    title : 'Gelang Tangan',
+    stock : 435
+},
+{
+    id : 11,
+    title : 'Liontin',
+    stock : 345
+},
+{
+    id : 12,
+    title : 'Minyak Wangi',
+    stock : 350
+}
+
+]
+export default dataStok;

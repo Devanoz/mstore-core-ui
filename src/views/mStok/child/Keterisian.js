@@ -45,7 +45,7 @@ import {
   cilUserFemale,
 } from '@coreui/icons'
 import { data } from 'core-js/internals/is-forced'
-
+import dataStok from '../data/dataStok'
 export default function Keterisian() {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
   const progressExample = [
@@ -55,7 +55,7 @@ export default function Keterisian() {
     { title: 'New Users', value: '22.123 Users', percent: 80, color: 'danger' },
     { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
   ]
-  const bulan = blnPendapatan.map((data) => data.nominal)
+  const stock = dataStok.map((data) => data.stock);
   return (
     <CCard className="mb-4">
       <CCardBody>
@@ -108,7 +108,7 @@ export default function Keterisian() {
                 borderColor: getStyle('--cui-info'),
                 pointHoverBackgroundColor: getStyle('--cui-info'),
                 borderWidth: 2,
-                data: bulan,
+                data: stock,
                 fill: true,
               },
             ],
