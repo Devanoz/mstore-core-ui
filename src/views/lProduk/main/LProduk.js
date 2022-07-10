@@ -62,7 +62,6 @@ import { Routes } from 'react-router'
 const LProduk = () => {
   return (
     <>
-    
       <CRow>
         <CCol>
           <CRow>
@@ -71,7 +70,6 @@ const LProduk = () => {
           <CRow className="my-2">
             <Keterangan />
           </CRow>
-          <CButton>de</CButton>
         </CCol>
       </CRow>
     </>

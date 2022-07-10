@@ -61,6 +61,8 @@ import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
 import ProductKategori from './child/ProductKategori'
 
+//import from sidebar
+
 
 
 const Dashboard = () => {
@@ -73,13 +75,13 @@ const Dashboard = () => {
 
       <Traffic/>
 
-      <WidgetsBrand withCharts />
+      {/* <WidgetsBrand withCharts /> */}
 
       <ProductKategori />
 
       <CRow>
         <CCol xs>
-          <LaluLintas />
+          {/* <LaluLintas /> */}
         </CCol>
       </CRow>
        
