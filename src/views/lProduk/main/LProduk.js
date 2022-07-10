@@ -62,9 +62,16 @@ import { Routes } from 'react-router'
 const LProduk = () => {
   return (
     <>
-      <ProductList/>
-      <Keterangan/>
-      <CButton>de</CButton>
+      <CRow>
+        <CCol>
+          <CRow>
+            <ProductList className="mb-2" />
+          </CRow>
+          <CRow className="my-2">
+            <Keterangan />
+          </CRow>
+        </CCol>
+      </CRow>
     </>
   )
 }
