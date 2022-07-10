@@ -59,8 +59,8 @@ export default function ListKategori() {
       {dataKategori.map((value) => {
         return (
           <CCol sm={4} md={3} className="my-3">
-            <CCard style={{ width: '18rem' }}>
-              <CCardImage orientation="top" src={value.image} />
+            <CCard style={{ width: '18rem', overflow:'hidden' }}>
+              <CCardImage className='CardImage' orientation="bottom" src={value.image} />
               <CCardBody>
                 <CCardTitle className='text-center'>{value.title}</CCardTitle>
                 <CCardText className='text-center'>Akhmad ramadhan</CCardText>

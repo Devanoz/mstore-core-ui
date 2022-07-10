@@ -1,3 +1,5 @@
+const { data } = require("core-js/internals/is-forced")
+
 const blnPendapatan = [
     {
         id:1,
@@ -121,5 +123,7 @@ const hriPendapatan = [
         nominal:1730000,
     },
 ]
+
+
 
 export { blnPendapatan, mguPendapatan, hriPendapatan }
