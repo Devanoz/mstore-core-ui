@@ -52,6 +52,7 @@ import {
 import StatistikPenjualan from '../child/StatistikPenjualan'
 import RasioPenjualan from "../child/RasioPenjualan"
 import StatistikJumlahPenjualan from '../child/StatistikJumlahPenjualan'
+import StatistikPenjualanPerbulan from '../child/StatistikPenjualanPerbulan'
 // import WidgetsBrand from '../widgets/WidgetsBrand'
 import TopWidget from '../child/TopWidget'
 
@@ -64,6 +65,13 @@ const SPenjualan = () => {
           <StatistikJumlahPenjualan/>
         </CCol>
       </CRow>
+
+      <CRow>
+        <CCol>
+          <StatistikPenjualanPerbulan/>
+        </CCol>
+      </CRow>
+
       
       <CRow>
         <CCol>
