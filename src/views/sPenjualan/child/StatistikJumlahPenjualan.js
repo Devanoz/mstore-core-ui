@@ -12,7 +12,7 @@ export default function StatistikJumlahPenjualan() {
           <h5 className="text-center card-title">Statistik Penjualan Produk</h5>
         </CCardHeader>
         <div className="mt-3">
-            <h5 className="text-center card-title ">Tahun 2022 bulan juli</h5>
+            <h5 className="text-center card-title ">Juli 2022</h5>
         </div>
         <CCardBody>
           <CChart
