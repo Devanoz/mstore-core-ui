@@ -18,7 +18,7 @@ export default function StatistikPenjualanPerbulan() {
           <CChart
             type="line"
             data={{
-              labels: ['januari', 'februari', 'maret', 'april', 'mei', 'juni', 'juli','agustus','september','oktober','november','desember'],
+              labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul','Agu','Sep','Okt','Nov','Des'],
               datasets: [
                 {
                   label: 'Statistik Penjualan',
