@@ -52,7 +52,7 @@ import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
 
 //import from child
-import TopWidget from "../sPenjualan/child/TopWidget"
+import TopWidget from '../sPenjualan/child/TopWidget'
 import LaluLintas from './child/LaluLitas'
 import Traffic from './child/Traffic'
 
@@ -67,48 +67,40 @@ import LProduk from '../lProduk/main/LProduk'
 import LKategori from '../lKategori/main/LKategori'
 import MStok from '../mStok/main/MStok'
 
-
-
 const Dashboard = () => {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
-
   return (
     <>
-      <TopWidget/>
+      <CRow className="my-3">
+        <SPenjualan />
+      </CRow>
 
-      <Traffic/>
+      <Traffic />
 
       {/* <WidgetsBrand withCharts /> */}
 
       <ProductKategori />
 
       <CRow>
-        <CCol xs>
-          {/* <LaluLintas /> */}
-        </CCol>
+        <CCol xs>{/* <LaluLintas /> */}</CCol>
       </CRow>
 
       <CRow className="my-3">
-        <SPenjualan/>
+        <SKeuangan />
       </CRow>
 
       <CRow className="my-3">
-        <SKeuangan/>
+        <LProduk />
       </CRow>
 
       <CRow className="my-3">
-        <LProduk/>
+        <LKategori />
       </CRow>
 
       <CRow className="my-3">
-        <LKategori/>
+        <MStok />
       </CRow>
-
-      <CRow className="my-3">
-        <MStok/>
-      </CRow>
-       
     </>
   )
 }

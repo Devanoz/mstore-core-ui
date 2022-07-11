@@ -67,9 +67,9 @@ const LProduk = () => {
           <CRow>
             <ProductList className="mb-2" />
           </CRow>
-          <CRow className="my-2">
+          {/* <CRow className="my-2">
             <Keterangan />
-          </CRow>
+          </CRow> */}
         </CCol>
       </CRow>
     </>
