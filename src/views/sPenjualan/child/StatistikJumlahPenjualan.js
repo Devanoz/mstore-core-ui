@@ -18,7 +18,7 @@ export default function StatistikJumlahPenjualan() {
           <CChart
             type="line"
             data={{
-              labels: ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu'],
+              labels: ['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'minggu'],
               datasets: [
                 {
                   label: 'Statistik Penjualan',
