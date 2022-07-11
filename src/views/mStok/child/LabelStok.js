@@ -27,7 +27,7 @@ export default function TopWidget() {
           style={{ backgroundColor: '#15A251', color: 'white' }}
           value={
             <>
-              100 <span className="fs-6 fw-normal">(Items)</span>
+              26 <span className="fs-6 fw-normal">(Items)</span>
             </>
           }
           title="Barang Masuk"
@@ -41,7 +41,7 @@ export default function TopWidget() {
           style={{ backgroundColor: '#158266', color: 'white' }}
           value={
             <>
-              100 <span className="fs-6 fw-normal">(Items)</span>
+              66 <span className="fs-6 fw-normal">(Items)</span>
             </>
           }
           title="Stok Gudang"
@@ -55,7 +55,7 @@ export default function TopWidget() {
           style={{ backgroundColor: '#15617C', color: 'white' }}
           value={
             <>
-              100 <span className="fs-6 fw-normal">(Items)</span>
+              45 <span className="fs-6 fw-normal">(Items)</span>
             </>
           }
           title="Stok Toko"
@@ -69,7 +69,7 @@ export default function TopWidget() {
           style={{ backgroundColor: '#15A251', color: 'white' }}
           value={
             <>
-              100 <span className="fs-6 fw-normal">(Items)</span>
+              137 <span className="fs-6 fw-normal">(Items)</span>
             </>
           }
           title="Total Produk"
@@ -97,7 +97,7 @@ export default function TopWidget() {
           style={{ backgroundColor: '#15617C', color: 'white' }}
           value={
             <>
-              100 <span className="fs-6 fw-normal">(Items)</span>
+              37 <span className="fs-6 fw-normal">(Items)</span>
             </>
           }
           title="Sisa Stok"
