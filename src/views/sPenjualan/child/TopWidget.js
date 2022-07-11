@@ -20,22 +20,27 @@ export default function TopWidget() {
 
   const quartalPertama = blnPendapatan.filter(
     (data) =>{
-        return(data.id < 5)
+        return(data.id < 4)
     }
     )
   const quartalKedua = blnPendapatan.filter(
     (data) =>{
-        return(data.id > 4 && data.id < 9)
+        return(data.id > 3 && data.id < 7)
     })
 
   const quartalKetiga = blnPendapatan.filter(
     (data) =>{
-        return(data.id > 8)
+        return(data.id > 6 && data.id < 10) 
+    })
+
+  const quartalKeempat = blnPendapatan.filter(
+    (data) =>{
+        return(data.id > 9) 
     })
 
   return (
     <CRow>
-      <CCol sm={4} md={4}>
+      <CCol sm={3} md={3}>
         <CWidgetStatsA
           className="mb-4"
           style={{backgroundColor:'#2E0249', color:'white'
@@ -124,7 +129,7 @@ export default function TopWidget() {
           }
         />
       </CCol>
-      <CCol sm={4} md={4}>
+      <CCol sm={3} md={3}>
         <CWidgetStatsA
           className="mb-4"
           style={{backgroundColor:'#570A57', color:'white'
@@ -213,7 +218,7 @@ export default function TopWidget() {
           }
         />
       </CCol>
-      <CCol sm={4} md={4}>
+      <CCol sm={3} md={3}>
         <CWidgetStatsA
           className="mb-4"
           style={{backgroundColor:'#A91079', color:'white'
@@ -246,6 +251,94 @@ export default function TopWidget() {
               style={{ height: '70px' }}
               data={{
                 labels: quartalKetiga.map((data)=> data.bulan),
+                datasets: [
+                  {
+                    label: 'Jumlah Produk ',
+                    backgroundColor: 'transparent',
+                    borderColor: 'rgba(255,255,255,.55)',
+                    pointBackgroundColor: 'transparent',
+                    data: [44,66,76,44],
+                  },
+                ],
+              }}
+              options={{
+                plugins: {
+                  legend: {
+                    display: false,
+                  },
+                },
+                maintainAspectRatio: false,
+                scales: {
+                  x: {
+                    grid: {
+                      display: false,
+                      drawBorder: false,
+                    },
+                    ticks: {
+                      display: false,
+                    },
+                  },
+                  y: {
+                    min: 0,
+                    max: 100,
+                    display: false,
+                    grid: {
+                      display: false,
+                    },
+                    ticks: {
+                      display: false,
+                    },
+                  },
+                },
+                elements: {
+                  line: {
+                    borderWidth: 1,
+                    tension: 0.4,
+                  },
+                  point: {
+                    radius: 4,
+                    hitRadius: 10,
+                    hoverRadius: 4,
+                  },
+                },
+              }}
+            />
+          }
+        />
+      </CCol>
+      <CCol sm={3} md={3}>
+        <CWidgetStatsA
+          className="mb-4"
+          style={{backgroundColor:'#A613A6', color:'white'
+        }}
+          value={
+            <>
+              120 {' '}
+              <span className="fs-6 fw-normal">
+                (Items)
+              </span>
+            </>
+          }
+          title="Quartal Keempat"
+          action={
+            <CDropdown alignment="end">
+              <CDropdownToggle color="transparent" caret={false} className="p-0">
+                <CIcon className="text-high-emphasis-inverse" />
+              </CDropdownToggle>
+              <CDropdownMenu>
+                <CDropdownItem>Action</CDropdownItem>
+                <CDropdownItem>Another action</CDropdownItem>
+                <CDropdownItem>Something else here...</CDropdownItem>
+                <CDropdownItem disabled>Disabled action</CDropdownItem>
+              </CDropdownMenu>
+            </CDropdown>
+          }
+          chart={
+            <CChartLine
+              className="mt-3 mx-3"
+              style={{ height: '70px' }}
+              data={{
+                labels: quartalKeempat.map((data)=> data.bulan),
                 datasets: [
                   {
                     label: 'Jumlah Produk ',
